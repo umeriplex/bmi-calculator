@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#17181B</color>
+    <color name="purple_500">#17181B</color>
+    <color name="purple_700">#17181B</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mainBG">#1c1d21</color>
+    <color name="etBG">#17181B</color>
+    <color name="title_color">#f1e3e4</color>
+    <color name="hint_color">#B5DDDDDD</color>
+    <color name="red">#B5B50404</color>
+    <color name="res">#DDD10808</color>
+    <color name="my_spinner_text_color">#808080</color>
+
+
+    <color name="brown">#322d25</color>
+    <color name="blue">#60c5d1</color>
+    <color name="light_green">#97e6b0</color>
+    <color name="dark_green">#2b453d</color>
+    <color name="gray">#f3f3f3</color>
+    <color name="light_red">#e29196</color>
+    <color name="dark_red">#F13F4A</color>
+    <color name="light_gray">#808080</color>
+    <color name="dark_gray">#4E4C4C</color>
+
+
+</resources>

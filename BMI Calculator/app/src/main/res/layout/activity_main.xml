@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/mainBG"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/bmi"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="Let's check your Health!"
+        android:textColor="@color/title_color"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5sp"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/layOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_w"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_bg"
+            android:textColor="@color/white"
+            android:hint="type your Weight here.."
+            android:textColorHint="@color/hint_color"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_w"
+            android:textAlignment="center"
+            android:backgroundTint="@color/white"
+            android:elevation="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/layOne"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_h"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/et_bg"
+            android:textColor="@color/white"
+            android:inputType="numberDecimal"
+            android:hint="type your Height here.."
+            android:textColorHint="@color/hint_color"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_h"
+            android:textAlignment="center"
+            android:backgroundTint="@color/white"
+            android:elevation="8dp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="8dp"
+        android:text="calculate"
+        android:backgroundTint="@color/title_color"
+        android:id="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@id/layTwo"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="BMI"
+        android:textColorHint="@color/hint_color"
+        android:textSize="24sp"
+        android:textColor="@color/title_color"
+        app:layout_constraintTop_toBottomOf="@id/btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/belgrano"
+        android:hint="Health"
+        android:textColorHint="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/res"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bmi" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
